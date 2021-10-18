@@ -1,0 +1,22 @@
+@import './../../styling/variables.scss';
+
+.past-clients {
+  &__title {
+    font-family: $lato;
+    font-size: 35px;
+    color: $steel-blue;
+    text-align: center;
+    width: 100%;
+    padding-bottom: 24px;
+  }
+
+  &__logos {
+    display: flex;
+    justify-content: center;
+
+    img {
+     max-width: 1000px;
+    }
+  }
+
+}

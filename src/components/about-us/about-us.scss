@@ -1,0 +1,21 @@
+@import './../../styling/variables.scss';
+
+.about-us {
+  font-size: 24px;
+  color: $steel-blue;
+  padding: 32px 0;
+  margin-top: 50px;
+  text-align: center;
+
+  &__header {
+    font-family: $lato;
+    border-bottom: 1px solid $steel-blue;
+    padding-bottom: 16px;
+    font-size: 35px;
+  }
+
+&__description {
+  font-family: $inter;
+  padding: 24px 80px;
+}
+}

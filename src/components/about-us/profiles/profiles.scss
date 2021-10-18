@@ -1,0 +1,45 @@
+@import './../../../styling/variables.scss';
+
+.profiles {
+  padding: 32px;
+  margin-top: 24px;
+  text-align: center;
+
+  &__profile-wrapper {
+    margin: 40px 0;
+    padding: 0 24px;
+  }
+
+  &__profile {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+  }
+
+  &__description {
+    max-width: 55%;
+    height: auto;
+    
+
+    &-title {
+      margin-bottom: 30px;
+      font-size: 28px;
+    }
+  }
+
+  &__image {
+    background-color: $powder-blue;
+    box-shadow: 8px 5px 5px $light-grey;
+    width: 450px;
+    height: 400px;
+    align-self: flex-end;
+  }
+
+  :nth-child(2) {
+    .profiles__profile {
+      display: flex;
+      flex-direction: row-reverse;
+      margin-top: 80px;
+    }
+  }
+}

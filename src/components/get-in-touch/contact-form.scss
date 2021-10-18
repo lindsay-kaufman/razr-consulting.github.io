@@ -1,0 +1,64 @@
+@import './../../styling/variables.scss';
+
+.contact-form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-width: 600px;
+  margin-top: 40px;
+  background-color: $white;
+  box-shadow: 8px 5px 5px $light-grey;
+
+  &-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__title {
+    font-family: $lato;
+    font-size: 35px;
+    color: $steel-blue;
+    text-align: center;
+    width: 100%;
+    padding: 24px 0 10px;
+  }
+
+  &__form {
+    display: flex;
+    justify-content: center;
+    border-radius: 8px;
+
+    &-message {
+      height: 150px;
+    }
+  }
+
+  &__submit {
+    font-family: $inter;
+    color: $steel-blue;
+    font-weight: 600;
+    background-color: #f2f2f2;
+    margin: 30px 70px;
+    width: 200px;
+    height: fit-content;
+
+    &:hover {
+      background-color: $steel-blue;
+      color: $white;
+    }
+  }
+
+  label {
+    font-family: $inter;
+    color: $steel-blue;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 8px 0;
+  }
+
+  input,
+  label {
+    max-width: 400px;
+  }
+}

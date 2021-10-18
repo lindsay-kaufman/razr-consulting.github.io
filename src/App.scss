@@ -1,46 +1,13 @@
-@import './variables.scss';
+@import './styling/variables.scss';
 
 .razr-consulting {
-  &__nav {
-    display: flex;
-    background: $white;
-    justify-content: space-between;
-    padding: 16px 32px;
-    color: $royal-blue;
-    font-family: $inter;
-    font-size: 20px;
+  background-color: #f2f2f2;
 
-    &--buttons {
-      > button {
-        justify-content: space-between;
-        margin: 0 16px;
-        background: none;
-        border: none;
-        color: $royal-blue;
-        font-family: $inter;
-        font-size: 20px;
-
-        &:hover {
-          cursor: pointer;
-        }
-      }
-    }
+  & > div {
+    padding: 32px;
   }
 
-  &__header {
-    background-image: url('/assets/images/Banner-Boston-DMC-skyline.jpeg');
-    background-size: cover;
-    min-height: 400px;
-    color: white;
-    display: flex;
-    align-items: flex-end;
-    &-info {
-      font-family: $inter;
-      font-size: 30px;
-      display: flex;
-      height: fit-content;
-      padding: 16px;
-      max-width: 850px;
-    }
+  & > nav {
+    padding: 20px 40px;
   }
 }

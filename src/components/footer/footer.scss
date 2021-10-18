@@ -1,0 +1,11 @@
+@import './../../styling/variables.scss';
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: $steel-blue;
+  font-family: $inter;
+  font-size: 20px;;
+  margin: 0 30px;
+}

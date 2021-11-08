@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import emailjs from 'emailjs-com'
 import './contact-form.scss'
 
 export const ContactForm = () => {
-  // const [isMessageSent, setMessageIsSent] = false
+  const [buttonText, setButtonText] = useState('Send Inquiry')
+
   const sendEmail = e => {
     e.preventDefault()
 
@@ -14,27 +15,45 @@ export const ContactForm = () => {
         e.target,
         'user_hv1Io7BwHTvuk2FdRG9on'
       )
-      .then(res => {
-        console.log(res)
+      .then(() => {
+        document.getElementById('form').reset()
+        setButtonText('Message Sent')
+
+        setTimeout(() => {
+          setButtonText('Send Inquiry')
+        }, 3000)
       })
       .catch(err => console.log(err))
   }
+
   return (
     <div className="container contact-form-wrapper" id="contact">
       <div className="contact-form">
-        <div className="contact-form__title">Get In Touch!</div>
+        <div className="contact-form__title">Get In Touch</div>
         <div>
-          <form className="row contact-form__form" onSubmit={sendEmail}>
+          <form
+            className="row contact-form__form"
+            id="form"
+            onSubmit={sendEmail}
+          >
             <label>Name: </label>
-            <input type="text" name="name" className="form-control" />
+            <input type="text" name="name" className="form-control" placeholder="Enter your name..."/>
 
             <label>Email: </label>
-            <input type="text" name="user_email" className="form-control" />
+            <input type="text" name="user_email" className="form-control" placeholder="Enter valid email..."/>
 
             <label>Message: </label>
-            <input name="message" rows="4" className="form-control contact-form__form-message" />
+              <textarea
+                name="message"
+                rows="4"
+                className="form-control contact-form__form-message"
+                placeholder="Type your message..."
+              />
+            
 
-            <button type="submit" className="form-control contact-form__submit">Send Inquiry</button>
+            <button type="submit" className="form-control contact-form__submit">
+              {buttonText}
+            </button>
           </form>
         </div>
       </div>

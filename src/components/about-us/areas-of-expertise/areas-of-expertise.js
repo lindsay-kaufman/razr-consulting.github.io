@@ -1,9 +1,12 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Slider from 'react-slick'
 import { AreaOfExpertiseTile } from './area-of-expertise-tile/area-of-expertise-tile'
+import { useBreakpoint } from './../../../hooks/use-breakpoint'
 import './areas-of-expertise.scss'
 
 export const AreasOfExpertise = () => {
+  const { isMobile, isLargeDesktop } = useBreakpoint()
+
   const tiles = [
     {
       title: 'Corporate Branding, Reputation Management',
@@ -53,23 +56,37 @@ export const AreasOfExpertise = () => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 3,
+    slidesToShow: isLargeDesktop ? 3 : 2,
+    slidesToScroll: isLargeDesktop ? 3 : 2,
     arrows: true,
   }
 
   return (
     <div className="areas-of-expertise-wrapper">
       <div className="grid-x areas-of-expertise">
-        <Slider className="areas-of-expertise__slider" {...carouselSettings}>
-          {tiles.map(tile => (
-            <AreaOfExpertiseTile
-              title={tile.title}
-              description={tile.description}
-              image={tile.image}
-            />
-          ))}
-        </Slider>
+        {!isMobile ? (
+          <Slider className="areas-of-expertise__slider" {...carouselSettings}>
+            {tiles.map(tile => (
+              <AreaOfExpertiseTile
+                key={tile.title}
+                title={tile.title}
+                description={tile.description}
+                image={tile.image}
+              />
+            ))}
+          </Slider>
+        ) : (
+          <div className="areas-of-expertise__mobile">
+            {tiles.map(tile => (
+              <AreaOfExpertiseTile
+                key={tile.title}
+                title={tile.title}
+                description={tile.description}
+                image={tile.image}
+              />
+            ))}
+          </div>
+        )}
       </div>
     </div>
   )

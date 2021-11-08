@@ -1,19 +1,30 @@
 @import './../../../styling/variables.scss';
 
 .areas-of-expertise {
-  width: 85%;
+  @media (min-width: 992px) {
+    width: 85%;
+    margin-top: 40px;
+  }
 
   &-wrapper {
     display: flex;
     justify-content: center;
-    margin-top: 40px;
+
+    @media (max-width: 992px) {
+      margin-top: 30px;
+    }
   }
 
-  .slick-next, .slick-prev {
+  &__slider {
+    text-align: -webkit-center;
+  }
+
+  .slick-next,
+  .slick-prev {
     color: $white;
 
     &:before {
-      color: $powder-blue;
+      color: $royal-blue;
       font-size: 30px;
     }
   }

@@ -2,26 +2,38 @@
 
 .contact-form {
   display: flex;
-  align-items: center;
   flex-direction: column;
   max-width: 600px;
   margin-top: 40px;
   background-color: $white;
-  box-shadow: 8px 5px 5px $light-grey;
+  box-shadow: 5px 5px 10px $light-grey;
+
+  @media (max-width: 992px) {
+    box-shadow: none;
+  }
 
   &-wrapper {
     width: 100%;
     display: flex;
     justify-content: center;
+
+    @media (max-width: 992px) {
+      text-align: center;
+    }
   }
 
   &__title {
     font-family: $lato;
     font-size: 35px;
-    color: $steel-blue;
+    color: $royal-blue;
     text-align: center;
     width: 100%;
     padding: 24px 0 10px;
+
+    @media (max-width: 992px) {
+      font-size: 30px;
+      padding: 24px 0;
+    }
   }
 
   &__form {
@@ -30,13 +42,13 @@
     border-radius: 8px;
 
     &-message {
-      height: 150px;
+      height: 100px;
     }
   }
 
   &__submit {
     font-family: $inter;
-    color: $steel-blue;
+    color: $royal-blue;
     font-weight: 600;
     background-color: #f2f2f2;
     margin: 30px 70px;
@@ -44,21 +56,28 @@
     height: fit-content;
 
     &:hover {
-      background-color: $steel-blue;
+      background-color: $royal-blue;
       color: $white;
+    }
+
+    &:focus {
+      color: $royal-blue;
+      background-color: $white;
     }
   }
 
   label {
     font-family: $inter;
-    color: $steel-blue;
+    color: $royal-blue;
     font-size: 20px;
     font-weight: 600;
     padding: 8px 0;
   }
 
   input,
-  label {
+  label,
+  textarea {
     max-width: 400px;
   }
+
 }

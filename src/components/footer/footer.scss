@@ -4,8 +4,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: $steel-blue;
+  color: $royal-blue;
   font-family: $inter;
   font-size: 20px;;
   margin: 0 30px;
+
+  @media (max-width: 992px) {
+    margin: 0;
+  }
 }

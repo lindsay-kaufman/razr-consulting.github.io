@@ -7,8 +7,9 @@ export const Header = () => (
       <div className="header__banner">
         <div className="header__title">RAZR CONSULTING </div>
         <div className="header__info">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          RAZR brings together the global communications, branding and patient
+          advocacy expertise of two award-winning industry leaders with more
+          than 50 years of combined experience.
         </div>
       </div>
     </div>

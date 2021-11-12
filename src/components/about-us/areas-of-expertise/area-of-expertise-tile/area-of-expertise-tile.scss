@@ -23,9 +23,6 @@
   &:hover {
     background-color: $green;
     cursor: pointer;
-    #{$area-of-expertise-tile}__description {
-      display: flex;
-    }
 
     #{$area-of-expertise-tile}__title {
       border-bottom: 1px solid $white;
@@ -53,6 +50,7 @@
         font-size: 22px;
         max-width: 400px;
         margin: 6px auto;
+        display: flex;
       }
 
       #{$area-of-expertise-tile}__title {
@@ -79,6 +77,7 @@
 
     @media (max-width: 992px) {
       margin-bottom: 0;
+      height: unset;
     }
   }
 

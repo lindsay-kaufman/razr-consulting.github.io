@@ -10,18 +10,26 @@
   background-color: $white;
   padding-bottom: 16px;
   color: $royal-blue;
-  font-family: $inter;
+  font-family: $praxis;
   font-size: 20px;
 
- @media (min-width: 992px) {
+  @media (min-width: 992px) {
     display: flex;
     justify-content: space-between;
   }
-  
+
   &--buttons {
     text-align: center;
+
+    @media (max-width: 992px) {
+      margin-top: 16px;
+    }
   }
 
+  img {
+    max-width: 150px;
+    max-height: auto;
+  }
 
   a {
     > button {
@@ -29,11 +37,15 @@
       background: none;
       border: none;
       color: $royal-blue;
-      font-family: $inter;
+      font-family: $praxis;
+      text-transform: uppercase;
       font-size: 18px;
 
       &:hover {
-        cursor: pointer;
+        @media (min-width: 992px) {
+          cursor: pointer;
+          color: $green;
+        }
       }
 
       @media (min-width: 992px) {

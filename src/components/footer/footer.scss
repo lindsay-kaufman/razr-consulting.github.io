@@ -5,11 +5,18 @@
   justify-content: space-between;
   align-items: center;
   color: $royal-blue;
-  font-family: $inter;
+  font-family: $praxis;
   font-size: 20px;;
   margin: 0 30px;
 
   @media (max-width: 992px) {
     margin: 0;
+    justify-content: center;
+    text-align: center;
+  }
+
+  img {
+    max-width: 150px;
+    max-height: auto;
   }
 }

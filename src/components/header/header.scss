@@ -6,18 +6,19 @@
   &-wrapper {
     background-color: $royal-blue;
     background-size: cover;
-    min-height: 500px;
+    min-height: 300px;
     color: white;
     display: flex;
     align-items: flex-end;
 
     @media (max-width: 992px) {
       min-height: 300px;
+      text-align: center;
     }
   }
 
   &__title {
-    font-family: $lato;
+    font-family: $praxis;
     font-size: 50px;
     padding: 16px 0;
 
@@ -28,7 +29,7 @@
   }
 
   &__info {
-    font-family: $lato;
+    font-family: $praxis;
     font-size: 25px;
     font-style: italic;
     display: flex;

@@ -53,7 +53,7 @@ export const AreasOfExpertise = () => {
   ]
 
   const carouselSettings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: isLargeDesktop ? 3 : 2,

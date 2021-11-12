@@ -1,13 +1,14 @@
 import React, { useState } from 'react'
 import classNames from 'classnames'
-import './area-of-expertise-tile.scss'
 import { useBreakpoint } from './../../../../hooks/use-breakpoint'
 
-export const AreaOfExpertiseTile = ({ title, description, image }) => {
+import './area-of-expertise-tile.scss'
+
+export const AreaOfExpertiseTile = ({ title, description }) => {
   const { isMobile } = useBreakpoint()
   const [isDescriptionVisible, setDescriptionVisible] = useState(false)
   const mobileClassNames = classNames('area-of-expertise-tile-mobile', {
-    'area-of-expertise-tile-mobile__expanded': isDescriptionVisible
+    'area-of-expertise-tile-mobile__expanded': isDescriptionVisible,
   })
 
   const toggleDescriptionVisible = () => {
@@ -16,10 +17,7 @@ export const AreaOfExpertiseTile = ({ title, description, image }) => {
 
   return (
     <div className="grid-x cell medium-4">
-      <div
-        className={!isMobile ? "area-of-expertise-tile" : mobileClassNames}
-        style={{ background: image ? image : '#0F52BA' }}
-      >
+      <div className={isMobile ? mobileClassNames : 'area-of-expertise-tile'}>
         {!isMobile ? (
           <>
             <div className="area-of-expertise-tile__title test">{title}</div>
@@ -28,7 +26,10 @@ export const AreaOfExpertiseTile = ({ title, description, image }) => {
             </div>
           </>
         ) : (
-          <div className="areas-of-expertise-tile__mobile" onClick={toggleDescriptionVisible}>
+          <div
+            className="areas-of-expertise-tile__mobile"
+            onClick={toggleDescriptionVisible}
+          >
             <div className="area-of-expertise-tile__title">{title}</div>
             {isDescriptionVisible && (
               <div className="area-of-expertise-tile__description">

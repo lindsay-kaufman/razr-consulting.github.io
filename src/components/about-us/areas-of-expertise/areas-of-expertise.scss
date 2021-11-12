@@ -23,6 +23,12 @@
   .slick-prev {
     color: $white;
 
+    &:hover {
+      &:before {
+        color: $green;
+      }
+    }
+
     &:before {
       color: $royal-blue;
       font-size: 30px;

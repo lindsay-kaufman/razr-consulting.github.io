@@ -2,25 +2,54 @@
 
 .clients {
   &__title {
-    font-family: $lato;
+    font-family: $praxis;
     font-size: 35px;
     color: $royal-blue;
     width: 100%;
-    padding-bottom: 24px;
+    text-align: center;
 
     @media (max-width: 992px) {
       font-size: 30px;
-      text-align: center;
     }
   }
 
   &__logos {
     display: flex;
-    justify-content: center;
+    flex-flow: wrap;
+    justify-content: space-around;
+    list-style: none;
+    margin: 50px 25px 0;
+    border-top: 1px solid $green;
+    border-bottom: 1px solid $green;
+    padding: 24px 0;
 
     img {
-     max-width: 1000px;
+      width: 300px;
+      height: auto;
+
+      @media (max-width: 992px) {
+        width: 200px;
+      }
+    }
+
+    @media (max-width: 992px) {
+      margin: 25px;
     }
   }
 
+  li {
+    margin: 12px;
+  }
+
+  &__logo-extended {
+    margin-bottom: 50px;
+
+    @media (max-width: 992px) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media (max-width: 992px) {
+    padding-bottom: 0;
+  }
 }

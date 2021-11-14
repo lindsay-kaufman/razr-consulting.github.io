@@ -33,10 +33,30 @@
     color: $royal-blue;
     font-size: 20px;
     margin-top: 24px;
+    padding: 0 150px;
+
+    @media (max-width: 992px) {
+      padding: 0;
+    }
   }
 
   &__profile {
     text-align: center;
+  }
+
+  &__description {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @media (max-width: 992px) {
+      height: unset;
+    }
+
+    &-wrapper {
+      min-height: 200px;
+    }
   }
 
   &__description,
@@ -55,15 +75,44 @@
       font-size: 20px;
       font-weight: bold;
       font-style: italic;
+      width: 100%;
+      padding-top: 20px;
+
+      &:after {
+        content: '\00bb';
+        position: relative;
+        opacity: 0;
+        bottom: 20;
+        right: -50px;
+        transition: 0.5s;
+      }
 
       &:hover {
         color: $green;
+        transform: translateX(-15px);
+
+        &:after {
+          opacity: 1;
+          right: 0;
+          padding-right: 50px;
+          position: absolute;
+        }
+      }
+
+      @media (max-width: 992px) {
+        max-width: none;
+  
+        &:after {
+          content: '';
+        }
+  
+        &:hover {
+          transform: none;
+        }
       }
     }
 
-    @media (max-width: 992px) {
-      max-width: none;
-    }
+
   }
 
   &__image {
@@ -77,12 +126,4 @@
       height: 250px;
     }
   }
-
-  // :nth-child(2) {
-  //   .profiles__profile {
-  //     display: flex;
-  //     flex-direction: row-reverse;
-  //     margin-top: 80px;
-  //   }
-  // }
 }

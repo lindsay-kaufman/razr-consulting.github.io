@@ -4,7 +4,7 @@ import { Header } from './components/header/header'
 import { AboutUs } from './components/about-us/about-us'
 import { Footer } from './components/footer/footer'
 //import { Awards } from './components/awards/awards'
-import { PastClients } from './components/clients/clients'
+import { Clients } from './components/clients/clients'
 import { ContactForm } from './components/get-in-touch/contact-form'
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
       <Header />
       <AboutUs />
       {/* <Awards /> */}
-      <PastClients />
+      <Clients />
       <ContactForm />
       <Footer />
     </div>

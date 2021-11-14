@@ -10,7 +10,7 @@ export const Footer = () => {
   return (
     <div className="footer">
       <div className="footer__contact">
-        <div className="footer__contact-phone">561-400-5602</div>
+        <div className="footer__contact-phone">617-413-1296</div>
         <div className="footer__contact-email">info@razrconsult.com</div>
       </div>
       {!isMobile && (

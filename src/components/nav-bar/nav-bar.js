@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import { Link } from 'react-scroll'
 import { useBreakpoint } from '../../hooks/use-breakpoint'
 import logo from './../../assets/images/RAZRLogo.jpg'

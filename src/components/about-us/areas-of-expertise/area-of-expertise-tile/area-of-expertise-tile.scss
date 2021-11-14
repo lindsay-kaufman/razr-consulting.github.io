@@ -8,21 +8,31 @@
   justify-content: flex-end;
   width: 300px;
   height: 275px;
-  margin: 40px;
   padding: 8px;
   box-shadow: 8px 5px 5px $light-grey;
   background-color: $royal-blue;
+  border-radius: 6px;
   transition: background-color 700ms;
 
   &__description {
     display: none;
     font-size: 20px;
-    height: 100%;
+  }
+
+  &-wrapper {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+
+    &:hover {
+      transform: translateY(-15px);
+    }
   }
 
   &:hover {
     background-color: $green;
     cursor: pointer;
+    justify-content: flex-start;
 
     #{$area-of-expertise-tile}__title {
       border-bottom: 1px solid $white;

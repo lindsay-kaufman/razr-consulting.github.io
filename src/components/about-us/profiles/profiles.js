@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import './profiles.scss'
 
-//use state to click to read about. photos side by side with person description (PR Expert) and description will come up underneath
 export const Profiles = () => {
   const [isLisaDescriptionExpended, setLisaDescriptionExpanded] =
     useState(false)
@@ -32,20 +31,21 @@ export const Profiles = () => {
           className="profiles__description-button"
           onClick={toggleLisaDescription}
         >
-          Hide description.
+          Hide description
         </button>
       </div>
     ) : (
       <div className="profiles__description">
+        <div className="profiles__description-text">
         Lisa Adler has held several executive leadership roles in the life
         sciences community; most recently at Shire Pharmaceuticals, Ironwood
         Pharmaceuticals, Millennium Pharmaceuticals (now Takeda Oncology) and
-        Johnson & Johnson. 
+        Johnson & Johnson. </div>
         <button
           className="profiles__description-button"
           onClick={toggleLisaDescription}
         >
-          Click to learn more about Lisa.
+          Click to learn more about Lisa
         </button>
       </div>
     )
@@ -66,19 +66,20 @@ export const Profiles = () => {
           className="profiles__description-button"
           onClick={toggleShawnDescription}
         >
-          Hide description.
+          Hide description
         </button>
       </div>
     ) : (
-      <div className="profiles__description-expanded">
+      <div className="profiles__description">
+        <div className="profiles__description-text">
         Shawn Goodman has held leadership roles in the commercial groups at COR
         Therapeutics and Millennium Pharmaceuticals with a primary focus on
-        corporate and product branding and creative services. 
+        corporate and product branding and creative services. </div>
         <button
           className="profiles__description-button"
           onClick={toggleShawnDescription}
         >
-          Click to learn more about Shawn.
+          Click to learn more about Shawn
         </button>
       </div>
     )
@@ -96,7 +97,7 @@ export const Profiles = () => {
           <div className="profiles__profile">
             <div className="profiles__description-title">Lisa Adler</div>
             <div className="profiles__image"></div>
-            <div className="profiles__description">
+            <div className="profiles__description-wrapper">
               {renderLisaDescription()}
             </div>
           </div>
@@ -105,7 +106,7 @@ export const Profiles = () => {
           <div className="profiles__profile">
             <div className="profiles__description-title">Shawn Goodman</div>
             <div className="profiles__image"></div>
-            <div className="profiles__description">
+            <div className="profiles__description-wrapper">
               {renderShawnDescription()}
             </div>
           </div>

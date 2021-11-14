@@ -37,17 +37,17 @@ export const ContactForm = () => {
             onSubmit={sendEmail}
           >
             <label>Name: </label>
-            <input type="text" name="name" className="form-control" placeholder="Enter your name..."/>
+            <input type="text" name="name" className="form-control" placeholder="Name..."/>
 
             <label>Email: </label>
-            <input type="text" name="user_email" className="form-control" placeholder="Enter valid email..."/>
+            <input type="text" name="user_email" className="form-control" placeholder="Email..."/>
 
             <label>Message: </label>
               <textarea
                 name="message"
                 rows="4"
                 className="form-control contact-form__form-message"
-                placeholder="Type your message..."
+                placeholder="Say hello..."
               />
             
 

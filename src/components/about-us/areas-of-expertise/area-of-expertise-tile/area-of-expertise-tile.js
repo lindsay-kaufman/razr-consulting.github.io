@@ -10,21 +10,21 @@ export const AreaOfExpertiseTile = ({ title, description }) => {
   const mobileClassNames = classNames('area-of-expertise-tile-mobile', {
     'area-of-expertise-tile-mobile__expanded': isDescriptionVisible,
   })
-
+  
   const toggleDescriptionVisible = () => {
     setDescriptionVisible(!isDescriptionVisible)
   }
 
   return (
     <div className="grid-x cell medium-4">
-      <div className={isMobile ? mobileClassNames : 'area-of-expertise-tile'}>
+      <div className={isMobile ? mobileClassNames : 'area-of-expertise-tile-wrapper'}>
         {!isMobile ? (
-          <>
+          <div className="area-of-expertise-tile">
             <div className="area-of-expertise-tile__title test">{title}</div>
             <div className="area-of-expertise-tile__description">
               {description}
             </div>
-          </>
+          </div>
         ) : (
           <div
             className="areas-of-expertise-tile__mobile"

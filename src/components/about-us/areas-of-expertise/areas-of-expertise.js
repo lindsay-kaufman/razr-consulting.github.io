@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import Slider from 'react-slick'
 import { AreaOfExpertiseTile } from './area-of-expertise-tile/area-of-expertise-tile'
 import { useBreakpoint } from './../../../hooks/use-breakpoint'

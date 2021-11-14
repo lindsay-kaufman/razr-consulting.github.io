@@ -1,26 +1,27 @@
 {
   "files": {
-    "main.css": "/razr-consulting.github.io/static/css/main.3571db1e.chunk.css",
-    "main.js": "/razr-consulting.github.io/static/js/main.31d7b984.chunk.js",
-    "main.js.map": "/razr-consulting.github.io/static/js/main.31d7b984.chunk.js.map",
+    "main.css": "/razr-consulting.github.io/static/css/main.ce39ae61.chunk.css",
+    "main.js": "/razr-consulting.github.io/static/js/main.1f594cb2.chunk.js",
+    "main.js.map": "/razr-consulting.github.io/static/js/main.1f594cb2.chunk.js.map",
     "runtime-main.js": "/razr-consulting.github.io/static/js/runtime-main.39dc232f.js",
     "runtime-main.js.map": "/razr-consulting.github.io/static/js/runtime-main.39dc232f.js.map",
-    "static/js/2.50a28666.chunk.js": "/razr-consulting.github.io/static/js/2.50a28666.chunk.js",
-    "static/js/2.50a28666.chunk.js.map": "/razr-consulting.github.io/static/js/2.50a28666.chunk.js.map",
+    "static/js/2.dc3f98a0.chunk.js": "/razr-consulting.github.io/static/js/2.dc3f98a0.chunk.js",
+    "static/js/2.dc3f98a0.chunk.js.map": "/razr-consulting.github.io/static/js/2.dc3f98a0.chunk.js.map",
     "static/js/3.5b3b1297.chunk.js": "/razr-consulting.github.io/static/js/3.5b3b1297.chunk.js",
     "static/js/3.5b3b1297.chunk.js.map": "/razr-consulting.github.io/static/js/3.5b3b1297.chunk.js.map",
     "index.html": "/razr-consulting.github.io/index.html",
-    "static/css/main.3571db1e.chunk.css.map": "/razr-consulting.github.io/static/css/main.3571db1e.chunk.css.map",
-    "static/js/2.50a28666.chunk.js.LICENSE.txt": "/razr-consulting.github.io/static/js/2.50a28666.chunk.js.LICENSE.txt",
+    "static/css/main.ce39ae61.chunk.css.map": "/razr-consulting.github.io/static/css/main.ce39ae61.chunk.css.map",
+    "static/js/2.dc3f98a0.chunk.js.LICENSE.txt": "/razr-consulting.github.io/static/js/2.dc3f98a0.chunk.js.LICENSE.txt",
     "static/media/RAZRLogo.74b41600.jpg": "/razr-consulting.github.io/static/media/RAZRLogo.74b41600.jpg",
     "static/media/allena-pharma.6cc1e328.jpg": "/razr-consulting.github.io/static/media/allena-pharma.6cc1e328.jpg",
+    "static/media/banner.cf0f20bd.jpg": "/razr-consulting.github.io/static/media/banner.cf0f20bd.jpg",
     "static/media/notable.0520e574.jpg": "/razr-consulting.github.io/static/media/notable.0520e574.jpg",
     "static/media/seagen.5708df21.jpeg": "/razr-consulting.github.io/static/media/seagen.5708df21.jpeg"
   },
   "entrypoints": [
     "static/js/runtime-main.39dc232f.js",
-    "static/js/2.50a28666.chunk.js",
-    "static/css/main.3571db1e.chunk.css",
-    "static/js/main.31d7b984.chunk.js"
+    "static/js/2.dc3f98a0.chunk.js",
+    "static/css/main.ce39ae61.chunk.css",
+    "static/js/main.1f594cb2.chunk.js"
   ]
 }

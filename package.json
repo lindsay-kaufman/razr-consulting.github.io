@@ -2,7 +2,7 @@
   "name": "razr-consulting",
   "version": "0.1.0",
   "private": false,
-  "homepage": "https://lindsay-kaufman.github.io/razr-consulting.github.io/",
+  "homepage": "https://razr-consulting.github.io/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",

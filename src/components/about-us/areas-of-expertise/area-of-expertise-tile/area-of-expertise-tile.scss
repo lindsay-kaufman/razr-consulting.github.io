@@ -29,6 +29,10 @@
       padding-bottom: 12px;
       height: fit-content;
     }
+
+    #{$area-of-expertise-tile}__description {
+      display: flex;
+    }
   }
 
   &-mobile {

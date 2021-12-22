@@ -1,6 +1,4 @@
 import React, { useState } from 'react'
-import Lisa from './../../../assets/images/Lisa.JPG'
-import Shawn from './../../../assets/images/Shawn.jpg'
 import './profiles.scss'
 
 export const Profiles = () => {

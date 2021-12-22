@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import Lisa from './../../../assets/images/Lisa.JPG'
+import Shawn from './../../../assets/images/Shawn.jpg'
 import './profiles.scss'
 
 export const Profiles = () => {
@@ -37,10 +39,11 @@ export const Profiles = () => {
     ) : (
       <div className="profiles__description">
         <div className="profiles__description-text">
-        Lisa Adler has held several executive leadership roles in the life
-        sciences community; most recently at Shire Pharmaceuticals, Ironwood
-        Pharmaceuticals, Millennium Pharmaceuticals (now Takeda Oncology) and
-        Johnson & Johnson. </div>
+          Lisa Adler has held several executive leadership roles in the life
+          sciences community; most recently at Shire Pharmaceuticals, Ironwood
+          Pharmaceuticals, Millennium Pharmaceuticals (now Takeda Oncology) and
+          Johnson & Johnson.{' '}
+        </div>
         <button
           className="profiles__description-button"
           onClick={toggleLisaDescription}
@@ -61,7 +64,6 @@ export const Profiles = () => {
         built and led multiple graphic design teams and holds two patents for
         innovative pharmaceutical packaging design. He spends his spare time
         redesigning the world around him and raising his Jack Russell puppies.
-       
         <button
           className="profiles__description-button"
           onClick={toggleShawnDescription}
@@ -72,9 +74,10 @@ export const Profiles = () => {
     ) : (
       <div className="profiles__description">
         <div className="profiles__description-text">
-        Shawn Goodman has held leadership roles in the commercial groups at COR
-        Therapeutics and Millennium Pharmaceuticals with a primary focus on
-        corporate and product branding and creative services. </div>
+          Shawn Goodman has held leadership roles in the commercial groups at
+          COR Therapeutics and Millennium Pharmaceuticals with a primary focus
+          on corporate and product branding and creative services.{' '}
+        </div>
         <button
           className="profiles__description-button"
           onClick={toggleShawnDescription}
@@ -96,7 +99,7 @@ export const Profiles = () => {
         <div className="profiles__profile-wrapper">
           <div className="profiles__profile">
             <div className="profiles__description-title">Lisa Adler</div>
-            <div className="profiles__image"></div>
+            <div className="profiles__image" />
             <div className="profiles__description-wrapper">
               {renderLisaDescription()}
             </div>
@@ -105,7 +108,8 @@ export const Profiles = () => {
         <div className="profiles__profile-wrapper">
           <div className="profiles__profile">
             <div className="profiles__description-title">Shawn Goodman</div>
-            <div className="profiles__image"></div>
+            <div className="profiles__image" />
+
             <div className="profiles__description-wrapper">
               {renderShawnDescription()}
             </div>

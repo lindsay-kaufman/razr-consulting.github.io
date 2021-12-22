@@ -1,9 +1,8 @@
 import React from 'react'
-import banner from './../../assets/images/banner.jpg'
 import './header.scss'
 
 export const Header = () => (
-  <div className="header-wrapper" style={{ backgroundImage: `url(${banner})` }}>
+  <div className="header-wrapper" style={{ backgroundColor: '#0075c9' }}>
     <div className="header">
       <div className="header__banner">
         <div className="header__title">RAZR CONSULTING </div>

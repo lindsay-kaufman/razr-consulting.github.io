@@ -5,7 +5,7 @@ import { useBreakpoint } from './../../../hooks/use-breakpoint'
 import './areas-of-expertise.scss'
 
 export const AreasOfExpertise = () => {
-  const { isMobile, isLargeDesktop } = useBreakpoint()
+  const { isMobile } = useBreakpoint()
 
   const tiles = [
     {

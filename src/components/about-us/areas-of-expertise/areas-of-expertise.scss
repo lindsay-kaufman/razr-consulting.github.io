@@ -3,15 +3,32 @@
 .areas-of-expertise {
   @media (min-width: 992px) {
     width: 85%;
-    margin-top: 40px;
+    margin: 20px 0 40px;
   }
 
   &-wrapper {
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(207, 209, 208, 0.45);
 
     @media (max-width: 992px) {
-      margin-top: 30px;
+      background-color: $white;
+    }
+  }
+
+  &__header {
+    font-family: $praxis;
+    font-size: 20px;
+    color: $dark-grey;
+    font-weight: bold;
+    border-bottom: 1px solid $dark-grey;
+    padding: 0 12px 12px;
+
+    @media (max-width: 992px) {
+      font-size: 20px;
+      padding-bottom: 8px;
+      margin-bottom: 30px;
     }
   }
 
@@ -34,5 +51,13 @@
       color: $royal-blue;
       font-size: 30px;
     }
+  }
+
+  .slick-next {
+    right: -30px;
+  }
+
+  .slick-prev {
+    left: -40px;
   }
 }

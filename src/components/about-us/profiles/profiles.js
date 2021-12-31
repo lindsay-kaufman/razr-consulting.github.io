@@ -1,7 +1,12 @@
 import React, { useState } from 'react'
+import { useBreakpoint } from './../../../hooks/use-breakpoint'
+import lisaProfileImg from './../../../assets/images/lisa-profile.jpeg'
+import shawnProfileImg from './../../../assets/images/shawn-profile.jpeg'
 import './profiles.scss'
 
 export const Profiles = () => {
+  const { isMobile } = useBreakpoint()
+
   const [isLisaDescriptionExpended, setLisaDescriptionExpanded] =
     useState(false)
   const [isShawnDescriptionExpanded, setShawnDescriptionExpanded] =
@@ -87,17 +92,21 @@ export const Profiles = () => {
 
   return (
     <div className="profiles">
-      <div className="profiles__header">
-        RAZR Consulting has more than 50 years of combined experience in the
-        technology and life sciences industries with proven success developing
-        and leading communications to advance business goals for companies
-        across corporate, healthcare and public sectors.
-      </div>
+      {!isMobile && (
+        <div className="profiles__header">
+          RAZR Consulting has more than 50 years of combined experience in the
+          technology and life sciences industries with proven success developing
+          and leading communications to advance business goals for companies
+          across corporate, healthcare and public sectors.
+        </div>
+      )}
       <div className="profiles__bios-wrapper">
         <div className="profiles__profile-wrapper">
           <div className="profiles__profile">
             <div className="profiles__description-title">Lisa Adler</div>
-            <div className="profiles__image" />
+            <div className="profiles__image">
+              <img src={lisaProfileImg} alt="Lisa's Profile" />
+            </div>
             <div className="profiles__description-wrapper">
               {renderLisaDescription()}
             </div>
@@ -106,7 +115,9 @@ export const Profiles = () => {
         <div className="profiles__profile-wrapper">
           <div className="profiles__profile">
             <div className="profiles__description-title">Shawn Goodman</div>
-            <div className="profiles__image" />
+            <div className="profiles__image">
+              <img src={shawnProfileImg} alt="Shawn's Profile" />
+            </div>
 
             <div className="profiles__description-wrapper">
               {renderShawnDescription()}

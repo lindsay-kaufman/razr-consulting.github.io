@@ -2,35 +2,31 @@
 
 .about-us {
   font-size: 24px;
-  color: $royal-blue;
+  color: $dark-grey;
   padding: 32px 0;
-  margin-top: 50px;
+  margin-top: 100px;
   text-align: center;
 
   @media (max-width: 992px) {
-    margin-top: 30px;
-  }
-
-  &__header {
-    font-family: $praxis;
-    border-bottom: 1px solid $royal-blue;
-    padding-bottom: 16px;
-    font-size: 35px;
-
-    @media (max-width: 992px) {
-      font-size: 30px;
-    }
-
-
+    margin-top: 0;
   }
 
   &__description {
     font-family: $praxis;
-    padding: 24px 150px;
+    padding: 60px 150px 70px;
     font-size: 20px;
-    
+    border-top: 1px solid $dark-grey;
+
     @media (max-width: 992px) {
-      padding: 24px 0;
+      padding: 24px 24px 35px;
+      margin-bottom: 40px;
+      border-top: none;
     }
+  }
+
+  &__experience {
+    font-family: 'Praxis', sans-serif;
+    font-size: 20px;
+    padding: 35px 24px;
   }
 }

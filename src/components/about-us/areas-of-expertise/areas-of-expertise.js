@@ -56,13 +56,14 @@ export const AreasOfExpertise = () => {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: isLargeDesktop ? 3 : 2,
-    slidesToScroll: isLargeDesktop ? 3 : 2,
+    slidesToShow: !isMobile ? 4 : 2,
+    slidesToScroll: !isMobile ? 1 : 2,
     arrows: true,
   }
 
   return (
     <div className="areas-of-expertise-wrapper">
+      <div className="areas-of-expertise__header"> What We Do</div>
       <div className="grid-x areas-of-expertise">
         {!isMobile ? (
           <Slider className="areas-of-expertise__slider" {...carouselSettings}>

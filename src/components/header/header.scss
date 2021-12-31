@@ -4,23 +4,38 @@
   height: 100%;
 
   &-wrapper {
-    background-color: $royal-blue;
-    background-size: cover;
     min-height: 400px;
-    color: white;
+    color: $dark-grey;
     display: flex;
     align-items: flex-end;
 
     @media (max-width: 992px) {
-      min-height: 300px;
+      min-height: auto;
       text-align: center;
+      padding: 20px;
+    }
+  }
+
+  &__subtitles {
+    font-family: $praxis;
+    font-weight: bolder;
+    font-size: 14px;
+    color: $royal-blue;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 400px;
+
+    @media (max-width: 992px) {
+      font-size: 12px;
+      margin-bottom: 8px;
     }
   }
 
   &__title {
     font-family: $praxis;
     font-size: 50px;
-    padding: 16px 0;
+    padding: 0 0 16px;
 
     @media (max-width: 992px) {
       font-size: 25px;
@@ -29,16 +44,30 @@
 
   &__banner {
     display: flex;
+    overflow-x: clip;
+
+    @media (max-width: 992px) {
+      overflow-x: visible;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__content {
+    display: flex;
     flex-direction: column;
-    width: 60%;
-    margin-right: auto;
-    padding-right: 20px;
+
+    @media (min-width: 992px) {
+      margin-right: -80px;
+      position: relative;
+      top: 80px;
+      left: 30px;
+    }
   }
 
   &__info {
     font-family: $praxis;
     font-size: 25px;
-    font-style: italic;
     display: flex;
     height: fit-content;
 
@@ -48,4 +77,13 @@
     }
   }
 
+  img {
+    max-width: 500px;
+    height: auto;
+    margin-left: auto;
+    transform: rotate(110deg);
+    position: relative;
+    top: 60px;
+    left: 30px;
+  }
 }

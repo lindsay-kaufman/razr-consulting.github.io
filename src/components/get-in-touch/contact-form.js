@@ -29,33 +29,35 @@ export const ContactForm = () => {
   return (
     <div className="container contact-form-wrapper" id="contact">
       <div className="contact-form">
-        <div className="contact-form__title">Get In Touch</div>
-        <div>
-          <form
-            className="row contact-form__form"
-            id="form"
-            onSubmit={sendEmail}
-          >
-            <label>Name: </label>
-            <input type="text" name="name" className="form-control" placeholder="Name..."/>
-
-            <label>Email: </label>
-            <input type="text" name="user_email" className="form-control" placeholder="Email..."/>
-
-            <label>Message: </label>
-              <textarea
-                name="message"
-                rows="4"
-                className="form-control contact-form__form-message"
-                placeholder="Say hello..."
-              />
-            
+        <form className=" contact-form__form" id="form" onSubmit={sendEmail}>
+          <div className="contact-form__header">
+            <div className="contact-form__title">Get In Touch</div>
 
             <button type="submit" className="form-control contact-form__submit">
               {buttonText}
             </button>
-          </form>
-        </div>
+          </div>
+          <div className="contact-form__form-content">
+            <input
+              type="text"
+              name="name"
+              className="form-control"
+              placeholder="Name..."
+            />
+            <input
+              type="text"
+              name="user_email"
+              className="form-control"
+              placeholder="Email..."
+            />
+            <textarea
+              name="message"
+              rows="4"
+              className="form-control contact-form__form-message"
+              placeholder="Say hello..."
+            />
+          </div>
+        </form>
       </div>
     </div>
   )

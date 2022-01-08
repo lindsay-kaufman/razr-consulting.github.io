@@ -6,26 +6,26 @@ import logo from './../../assets/images/RAZRLogo.jpg'
 import './nav-bar.scss'
 
 export const NavBar = () => {
-  const { isLargeDesktop } = useBreakpoint()
+  const { isLargeDesktop, isDesktop } = useBreakpoint()
 
   const links = [
     {
       to: 'about',
-      offset: isLargeDesktop ? -60 : -80,
+      offset: isLargeDesktop || isDesktop ? -60 : -80,
       class: 'nav-bar--buttons-about',
       label: isLargeDesktop ? 'About Us' : 'About',
       href: '#about',
     },
     {
       to: 'clients',
-      offset: isLargeDesktop ? -40 : -80,
+      offset: isLargeDesktop || isDesktop ? -70 : -120,
       class: 'nav-bar--buttons-clients',
       label: 'Clients',
       href: '#clients',
     },
     {
       to: 'contact',
-      offset: isLargeDesktop ? -40 : -60,
+      offset: isLargeDesktop || isDesktop ? -40 : -60,
       class: 'nav-bar--buttons-contact',
       label: isLargeDesktop ? 'Get In Touch' : 'Contact',
       href: '#contact',

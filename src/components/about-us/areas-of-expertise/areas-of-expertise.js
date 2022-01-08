@@ -15,7 +15,7 @@ export const AreasOfExpertise = () => {
       image: '',
     },
     {
-      title: 'Creative Serives',
+      title: 'Creative Services',
       description:
         'Identity development, illustration and MOA graphics, infographics/data visualization, print/digital collateral, annual reports, presentation design, booth design',
       image: '',

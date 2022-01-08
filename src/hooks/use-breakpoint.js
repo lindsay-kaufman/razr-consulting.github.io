@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 
 export const useBreakpoint = () => {
-  const [width, setWidth] = useState(window.innerWidth)
+  const [width, setInnerWidth] = useState(window.innerWidth)
   const [isMobile, setIsMobile] = useState(false)
   const [isDesktop, setIsDesktop] = useState(false)
   const [isLargeDesktop, setIsLargeDesktop] = useState(false)
@@ -12,17 +12,46 @@ export const useBreakpoint = () => {
     largeDesktop: 1300,
   }
 
+  const setMobile = () => {
+    setIsDesktop(false)
+    setIsLargeDesktop(false)
+    setIsMobile(true)
+    console.log('mobile')
+  }
+
+  const setDesktop = () => {
+    setIsDesktop(true)
+    setIsLargeDesktop(false)
+    setIsMobile(false)
+    console.log('desktop')
+  }
+
+  const setLargeDesktop = () => {
+    setIsDesktop(false)
+    setIsMobile(false)
+    setIsLargeDesktop(true)
+    console.log('large desktop')
+  }
+
   useEffect(() => {
-    setWidth(window.innerWidth)
+    const getInnerWidth = () => {
+      setInnerWidth(window.innerWidth)
+      return width
+    }
+
+    window.addEventListener('resize', getInnerWidth)
 
     if (width < breakpoints.desktop) {
-      setIsMobile(true)
+      setMobile()
     } else if (width >= breakpoints.largeDesktop) {
-      setIsLargeDesktop(true)
-    } else setIsDesktop(true)
+      setLargeDesktop()
+    } else {
+      setDesktop()
+    }
 
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [])
+    return () => window.removeEventListener('resize', getInnerWidth)
+    
+  }, [breakpoints.desktop, breakpoints.largeDesktop, width])
 
   return {
     isMobile,

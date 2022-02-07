@@ -45,7 +45,7 @@ export const ContactForm = () => {
               placeholder="Name..."
             />
             <input
-              type="text"
+              type="email"
               name="user_email"
               className="form-control"
               placeholder="Email..."

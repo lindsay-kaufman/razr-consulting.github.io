@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "./static/css/main.9ddcc8e5.chunk.css",
+    "main.js": "./static/js/main.745b0094.chunk.js",
+    "main.js.map": "./static/js/main.745b0094.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.f457259e.js",
+    "runtime-main.js.map": "./static/js/runtime-main.f457259e.js.map",
+    "static/js/2.09cfea99.chunk.js": "./static/js/2.09cfea99.chunk.js",
+    "static/js/2.09cfea99.chunk.js.map": "./static/js/2.09cfea99.chunk.js.map",
+    "static/js/3.5b3b1297.chunk.js": "./static/js/3.5b3b1297.chunk.js",
+    "static/js/3.5b3b1297.chunk.js.map": "./static/js/3.5b3b1297.chunk.js.map",
+    "index.html": "./index.html",
+    "static/css/main.9ddcc8e5.chunk.css.map": "./static/css/main.9ddcc8e5.chunk.css.map",
+    "static/js/2.09cfea99.chunk.js.LICENSE.txt": "./static/js/2.09cfea99.chunk.js.LICENSE.txt",
+    "static/media/RAZRLogo.74b41600.jpg": "./static/media/RAZRLogo.74b41600.jpg",
+    "static/media/allena-pharma.6cc1e328.jpg": "./static/media/allena-pharma.6cc1e328.jpg",
+    "static/media/lisa-profile.628b6df2.jpeg": "./static/media/lisa-profile.628b6df2.jpeg",
+    "static/media/molecule.a315a68b.png": "./static/media/molecule.a315a68b.png",
+    "static/media/notable.0520e574.jpg": "./static/media/notable.0520e574.jpg",
+    "static/media/seagen.5708df21.jpeg": "./static/media/seagen.5708df21.jpeg",
+    "static/media/shawn-profile.18a3d46d.jpeg": "./static/media/shawn-profile.18a3d46d.jpeg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f457259e.js",
+    "static/js/2.09cfea99.chunk.js",
+    "static/css/main.9ddcc8e5.chunk.css",
+    "static/js/main.745b0094.chunk.js"
+  ]
+}
